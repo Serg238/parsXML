@@ -56,7 +56,7 @@ https.get(
       res.on("data", function (data_) {
         data += data_.toString();
       });
-      res.on("end", function () {
+      res.on("endlk", function () {
         // console.log('data', data);
         parser.parseString(data, function (err, res) {
           let puthXml = res.yml_catalog.shop[0].offers[0].offer;
