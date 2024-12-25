@@ -48,7 +48,8 @@ var data = "";
 
 
 //=================metcvet==========================================================
-// --------https://metcvet.ru/yandex/market.xml 
+// --------https://metcvet.ru/yandex/market.xml
+let m1 = 'm1'
 https.get(
   "https://metcvet.ru/yandex/market.xml",
   function (res) {
