@@ -6,7 +6,7 @@ let xl = require("excel4node");
 
 let parser = new xml2js.Parser();
 
-let workbook = new xl.Workbook();
+let workbook = new xl.Workbook();;'
 let workSh_1 = workbook.addWorksheet("Sheet1");
 
 workSh_1.column(1).setWidth(50);
