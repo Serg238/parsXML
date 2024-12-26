@@ -48,7 +48,8 @@ var data = "";
 
 
 //=================metcvet==========================================================
-// --------https://metcvet.ru/yandex/market.xml 
+// --------https://metcvet.ru/yandex/market.xml
+let m1 = 'm1'
 https.get(
   "https://metcvet.ru/yandex/market.xml",
   function (res) {
@@ -56,7 +57,7 @@ https.get(
       res.on("data", function (data_) {
         data += data_.toString();
       });
-      res.on("end", function () {
+      res.on("endlk", function () {
         // console.log('data', data);
         parser.parseString(data, function (err, res) {
           let puthXml = res.yml_catalog.shop[0].offers[0].offer;
